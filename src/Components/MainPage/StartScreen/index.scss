@@ -1,20 +1,50 @@
-html {
-  font-size: $font-basis;
-}
-
-.header__logo-title {
-  font: $font-logo-title;
-  letter-spacing: 0.06em;
-  color: $color-primary;
-}
-
-.header__logo-subtitle {
-  font: $font-logo-subtitle;
-  letter-spacing: 0.1em;
-  color: $color-light;
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
 }
 
 .start-screen {
   background: radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%),
     linear-gradient(0deg, #211f20, #211f20);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // margin-top: 65px;
+
+  &__logo-title {
+    margin: 61px 0px 10px 0px;
+    font: $font-logo-title;
+    letter-spacing: 0.06em;
+    color: $color-primary;
+  }
+
+  &__logo-subtitle {
+    margin: 0px;
+    padding-left: 5px;
+    font: $font-logo-subtitle;
+    letter-spacing: 0.13em;
+    color: $color-light-xl;
+  }
+
+  &__list {
+    width: 443px;
+    margin-top: 65px;
+    padding-left: 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  &__item {
+    list-style-type: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    font: $font-paragraph-l;
+    letter-spacing: 0.02em;
+    color: $color-dark-s;
+  }
 }
