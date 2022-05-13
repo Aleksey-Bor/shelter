@@ -1,0 +1,20 @@
+html {
+  font-size: $font-basis;
+}
+
+.header__logo-title {
+  font: $font-logo-title;
+  letter-spacing: 0.06em;
+  color: $color-primary;
+}
+
+.header__logo-subtitle {
+  font: $font-logo-subtitle;
+  letter-spacing: 0.1em;
+  color: $color-light;
+}
+
+.start-screen {
+  background: radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%),
+    linear-gradient(0deg, #211f20, #211f20);
+}
