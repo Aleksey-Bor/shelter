@@ -1,4 +1,4 @@
-import htmlToElement from "../../utils/htmlToElement";
+import htmlToElement from "../../../utils/htmlToElement";
 import StartScreen from "./index.html";
 import "./index.scss";
 

@@ -1,8 +1,4 @@
-// import 'normalize.css'
-// import './styles/main.scss';
-
-/******************** */
-import StartScreen from './Components/StartScreen';
+import StartScreen from './Components/MainPage/StartScreen';
 import "./index.scss";
 
 const root = document.getElementById("root");
