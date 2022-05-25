@@ -8,11 +8,10 @@
     linear-gradient(0deg, #211f20, #211f20);
 }
 
-.header {
+/* .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // margin-top: 65px;
 
   &__logo-title {
     margin: 61px 0px 10px 0px;
@@ -36,7 +35,7 @@
     display: flex;
     justify-content: space-between;
   }
-  
+
   &__item {
     list-style-type: none;
   }
@@ -46,5 +45,6 @@
     font: $font-paragraph-l;
     letter-spacing: 0.02em;
     color: $color-dark-s;
+    cursor: pointer;
   }
-}
+} */

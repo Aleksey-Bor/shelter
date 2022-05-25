@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo-title {
+    margin: 61px 0px 10px 0px;
+    font: $font-logo-title;
+    letter-spacing: 0.06em;
+    color: $color-primary;
+  }
+
+  &__logo-subtitle {
+    margin: 0px;
+    padding-left: 5px;
+    font: $font-logo-subtitle;
+    letter-spacing: 0.13em;
+    color: $color-light-xl;
+  }
+
+  &__list {
+    width: 443px;
+    margin-top: 65px;
+    padding-left: 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    list-style-type: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    font: $font-paragraph-l;
+    letter-spacing: 0.02em;
+    color: $color-dark-s;
+  }
+}
