@@ -1,18 +1,12 @@
-let data = {
-  pageNumber: 1,
-
+let routingData = {
   subscribe(observer) {
     this._callSubscriber = observer;
   },
 
-  setPageNumber(pageNumber) {
-    this.pageNumber = pageNumber;
-    this._callSubscriber(this.pageNumber);
-  },
-
-  getPageNumber() {
-    return this.pageNumber;
+  setPage(currentPage) {
+    window.location.pathname = currentPage;
+    this._callSubscriber(window.location.pathname);
   },
 };
 
-export default data;
+export default routingData;

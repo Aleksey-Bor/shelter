@@ -5,15 +5,12 @@ import "./index.scss";
 
 function rerenderApp() {
   const root = document.getElementById("root");
-  let pageNumber = data.getPageNumber();
+  let page = window.location.pathname;
+  console.log(page);
 
   root.append(StartScreen);
   console.log("Rerender happened!");
-  switch (pageNumber) {
-    case 1:
-      root.lastChild.remove();
-      root.append(StartScreen);
-      break;
+  switch (page) {
     case 2:
       root.lastChild.remove();
       root.append(HeaderTest);
@@ -26,6 +23,9 @@ function rerenderApp() {
       root.lastChild.remove();
       root.append(HeaderTest);
       break;
+    default:
+      root.lastChild.remove();
+      root.append(StartScreen);
   }
 }
 
