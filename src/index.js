@@ -6,20 +6,19 @@ import "./index.scss";
 function rerenderApp() {
   const root = document.getElementById("root");
   let page = window.location.pathname;
-  console.log(page);
-
   root.append(StartScreen);
+
   console.log("Rerender happened!");
   switch (page) {
-    case 2:
+    case "ourpets":
       root.lastChild.remove();
       root.append(HeaderTest);
       break;
-    case 3:
+    case "help":
       root.lastChild.remove();
       root.append(HeaderTest);
       break;
-    case 4:
+    case "contacts":
       root.lastChild.remove();
       root.append(HeaderTest);
       break;
