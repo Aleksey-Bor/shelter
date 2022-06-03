@@ -14,7 +14,7 @@
     margin: 0px;
     padding-left: 5px;
     font: $font-logo-subtitle;
-    letter-spacing: 0.13em;
+    letter-spacing: 0.1em;
     color: $color-light-xl;
   }
 
@@ -30,10 +30,20 @@
     list-style-type: none;
   }
 
-  &__link {
+  %link-shared {
+    padding-bottom: 4px;
     text-decoration: none;
     font: $font-paragraph-l;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.005em;
     color: $color-dark-s;
+  }
+
+  &__link {
+    @extend %link-shared;
+  }
+
+  &__link_active {
+    @extend %link-shared;
+    border-bottom: solid 3px $color-primary;
   }
 }

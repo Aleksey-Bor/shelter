@@ -8,6 +8,8 @@ function renderApp() {
   let page = searchParams.get("page");
   root.append(StartScreen);
 
+  console.log("hi");
+
   switch (page) {
     case "ourpets":
       root.lastChild.remove();

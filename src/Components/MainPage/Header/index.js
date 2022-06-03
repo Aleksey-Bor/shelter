@@ -13,7 +13,7 @@ const customLink1 = link({
   onClick: () => routingMethod.setPage(""),
   title: "About the shelter",
   className: "header__link",
-  id: 1,
+  id: "",
 });
 customLi1.appendChild(customLink1);
 ulElem.appendChild(customLi1);
@@ -23,7 +23,7 @@ const customLink2 = link({
   onClick: () => routingMethod.setPage("ourpets"),
   title: "Our pets",
   className: "header__link",
-  id: 2,
+  id: "ourpets",
 });
 customLi2.appendChild(customLink2);
 ulElem.appendChild(customLi2);
@@ -33,7 +33,7 @@ const customLink3 = link({
   onClick: () => routingMethod.setPage("help"),
   title: "Help the shelter",
   className: "header__link",
-  id: 3,
+  id: "help",
 });
 customLi3.appendChild(customLink3);
 ulElem.appendChild(customLi3);
@@ -43,7 +43,7 @@ const customLink4 = link({
   onClick: () => routingMethod.setPage("contacts"),
   title: "Contacts",
   className: "header__link",
-  id: 4,
+  id: "contacts",
 });
 customLi4.appendChild(customLink4);
 ulElem.appendChild(customLi4);
