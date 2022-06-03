@@ -1,14 +1,13 @@
-import data from "../routingData";
 import StartScreen from "./Components/MainPage/StartScreen";
 import HeaderTest from "./Components/OurPets/HeaderTest/index";
 import "./index.scss";
 
-function rerenderApp() {
+function renderApp() {
   const root = document.getElementById("root");
-  let page = window.location.pathname;
+  const searchParams = new URLSearchParams(window.location.search);
+  let page = searchParams.get("page");
   root.append(StartScreen);
 
-  console.log("Rerender happened!");
   switch (page) {
     case "ourpets":
       root.lastChild.remove();
@@ -28,5 +27,4 @@ function rerenderApp() {
   }
 }
 
-rerenderApp();
-data.subscribe(rerenderApp);
+renderApp();
