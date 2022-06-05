@@ -2,16 +2,34 @@ $font-basis: 10px;
 $font-logo-title: 3.2em/110% Georgia, sans-serif;
 $font-logo-subtitle: 1.3em/115% Arial, sans-serif;
 $font-paragraph-l: 1.5em/160% Arial, sans-serif;
+$font-paragraph-s: italic 1.2em/150% Arial, sans-serif;
+$font-header2: 4.4em/130% Georgia, sans-serif;
+$font-header3: 3.5em/130% Georgia, sans-serif;
+$font-header4: 2em/115% Georgia, sans-serif;
+$font-header5: 1.5em/110% Georgia, sans-serif;
+$font-button: 1.7em/130% Georgia, sans-serif;
+
 $color-primary: #f1cdb3;
-$color-primary-light: #FDDCC4;
+$color-primary-light: #fddcc4;
 $color-light-xl: #ffffff;
-$color-light-s: #FAFAFA;
-$color-light-l: #F6F6F6;
-$color-dark-s: #CDCDCD;
-$color-dark-m: #B2B2B2;
+$color-light-s: #fafafa;
+$color-light-l: #f6f6f6;
+$color-dark-s: #cdcdcd;
+$color-dark-m: #b2b2b2;
 $color-dark-l: #545454;
-$color-dark-xl: #4C4C4C;
+$color-dark-xl: #4c4c4c;
 $color-dark-2xl: #444444;
 $color-dark-3xl: #292929;
-$color-light-s: #FAFAFA;
-$color-light-s: #FAFAFA;
+$color-light-s: #fafafa;
+$color-light-s: #fafafa;
+
+@mixin button($background-color) {
+  height: 52px;
+  width: 207px;
+  border-radius: 100px;
+  background-color: $background-color;
+  font: $font-button;
+  letter-spacing: 0.06em;
+}
+
+

@@ -8,43 +8,46 @@
     linear-gradient(0deg, #211f20, #211f20);
 }
 
-/* .header {
+.main {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+}
 
-  &__logo-title {
-    margin: 61px 0px 10px 0px;
-    font: $font-logo-title;
-    letter-spacing: 0.06em;
-    color: $color-primary;
-  }
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  &__logo-subtitle {
-    margin: 0px;
-    padding-left: 5px;
-    font: $font-logo-subtitle;
-    letter-spacing: 0.13em;
-    color: $color-light-xl;
-  }
+.main__image {
+  width: 698px;
+  height: 728px;
+}
 
-  &__list {
-    width: 443px;
-    margin-top: 65px;
-    padding-left: 0px;
-    display: flex;
-    justify-content: space-between;
-  }
+.main__title {
+  max-width: 310px;
+  margin: 0 0 42px 0;
+  font: $font-header2;
+  color: $color-light-xl;
+}
 
-  &__item {
-    list-style-type: none;
-  }
+.main__subtitle {
+  max-width: 460px;
+  font: $font-paragraph-l;
+  color: $color-dark-s;
+  margin: 0 0 41px 0;
+}
 
-  &__link {
-    text-decoration: none;
-    font: $font-paragraph-l;
-    letter-spacing: 0.02em;
-    color: $color-dark-s;
-    cursor: pointer;
-  }
-} */
+.button-primary {
+  @include button($color-primary);
+}
+.button-primary:hover {
+  @include button($color-primary-light);
+}
+
+.main__image-container {
+  padding: 59px 0 0 38px;
+}
+
+.main__button {
+  margin-bottom: 26px;
+}
