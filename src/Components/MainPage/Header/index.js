@@ -2,11 +2,13 @@ import routingMethod from "../../../../routingMethod";
 import htmlToElement from "../../../utils/htmlToElement";
 import Li from "../../helpers/LiMaker/index";
 import link from "../../helpers/RoutingLinkMaker/index";
+import BurgerButton from "./BurgerMenu";
 import Header from "./index.html";
 import "./index.scss";
 
 const header = htmlToElement(Header);
 const ulElem = header.getElementsByClassName("header__list")[0];
+const nav = header.getElementsByTagName("nav")[0];
 
 const customLi1 = Li("header__item");
 const customLink1 = link({
@@ -47,5 +49,7 @@ const customLink4 = link({
 });
 customLi4.appendChild(customLink4);
 ulElem.appendChild(customLi4);
+
+nav.appendChild(BurgerButton)
 
 export default header;
