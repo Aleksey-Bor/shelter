@@ -47,3 +47,19 @@
     border-bottom: solid 3px $color-primary;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .header {
+    margin: auto;
+    max-width: 708px;
+    padding-left: 16px;
+
+    &__logo-title {
+      margin: 31px 0px 10px 0px;
+    }
+
+    &__list {
+      margin-top: 35px;
+    }
+  }
+}
