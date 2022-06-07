@@ -1,11 +1,11 @@
-.wrapper {
-  max-width: 1200px;
-  margin: auto;
-}
-
 .start-screen {
   background: radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%),
     linear-gradient(0deg, #211f20, #211f20);
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
 }
 
 .main {
@@ -34,7 +34,7 @@
   max-width: 460px;
   font: $font-paragraph-l;
   color: $color-dark-s;
-  margin: 0 0 41px 0;
+  margin: 0 0 42px 0;
 }
 
 .button-primary {
@@ -43,11 +43,11 @@
 .button-primary:hover {
   @include button($color-primary-light);
 }
+.main__button {
+  margin-bottom: 23px;
+}
 
 .main__image-container {
   padding: 59px 0 0 38px;
 }
 
-.main__button {
-  margin-bottom: 26px;
-}
