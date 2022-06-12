@@ -1,0 +1,18 @@
+@mixin button($background-color) {
+  height: 52px;
+  width: 207px;
+  border-radius: 100px;
+  background-color: $background-color;
+  font: $font-button;
+  letter-spacing: 0.06em;
+}
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}

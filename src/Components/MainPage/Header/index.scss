@@ -3,6 +3,11 @@
   justify-content: space-between;
   align-items: center;
 
+  &__logo {
+    // width: 186px;
+    // height: 60px;
+  }
+
   &__logo-title {
     margin: 61px 0px 10px 0px;
     font: $font-logo-title;
@@ -51,11 +56,11 @@
 @media screen and (max-width: 1250px) {
   .header {
     margin: auto;
-    max-width: 90%;
+    max-width: 80%;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) {
   .header {
     max-width: 708px;
     padding-left: 16px;
@@ -72,7 +77,7 @@
 
 @media screen and (max-width: 700px) {
   .header {
-    max-width: 300px;
+    max-width: 569px;
     padding-left: 0px;
 
     &__list {
@@ -86,6 +91,24 @@
 
     .burger-button > div {
       margin-bottom: 8px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    &__logo {
+      padding-left: 8px;
+    }
+
+    &__logo p {
+      min-width: 184px;
     }
   }
 }
