@@ -1,0 +1,26 @@
+.mobile-menu {
+  max-width: 569px;
+  // background-color: $color-dark-3xl;
+  background-color: white;
+  margin: auto;
+  padding: 0;
+  position: absolute;
+  top: -44px;
+  left: 0px;
+  z-index: 1;
+}
+
+.mobile-menu__item {
+  list-style-type: none;
+}
+
+.open {
+  position: relative;
+  top: 0px;
+}
+
+@media screen and (min-width: 701px) {
+  .mobile-menu {
+    display: none;
+  }
+}
