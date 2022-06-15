@@ -1,4 +1,3 @@
-import StartScreen from "./Components/MainPage/StartScreen";
 import HeaderTest from "./Components/OurPets/HeaderTest/index";
 import Wrapper from "./Components/Wrapper";
 import "./index.scss";

@@ -4,7 +4,6 @@ import BurgerButton from "./index.html";
 import "./index.scss";
 
 const burger = htmlToElement(BurgerButton);
-// debugger
 
 const turnBurger = () => {
   burger.classList.toggle("turned");

@@ -8,11 +8,32 @@
   padding: 0;
   background-color: $color-dark-3xl;
   align-items: center;
-  color: $color-dark-s;
   transition: right 0.4s;
 
   &__item {
     list-style-type: none;
+    margin-top: 33px;
+  }
+  
+  & > &__item:first-child {
+    margin-top: 147px;
+  }
+  
+  %link-shared {
+    display: inline-block;
+    font: $font-paragraph-mobile-menu;
+  }
+
+  &__link {
+    @extend %link-shared;
+    margin-top: 10px;
+    color: $color-dark-s;
+  }
+
+  &__link_active {
+    @extend %link-shared;
+    color: $color-light-s;
+    border-bottom: solid 3px $color-primary;
   }
 }
 

@@ -24,7 +24,7 @@ ulElem.appendChild(customLi1);
 
 const customLi2 = Li("mobile-menu__item");
 const customLink2 = RoutingLink({
-  onClick: () => routingMethod.setPage(""),
+  onClick: () => routingMethod.setPage("ourpets"),
   title: "Our pets",
   className: "mobile-menu__link",
   id: "ourpets",
@@ -34,7 +34,7 @@ ulElem.appendChild(customLi2);
 
 const customLi3 = Li("mobile-menu__item");
 const customLink3 = RoutingLink({
-  onClick: () => routingMethod.setPage(""),
+  onClick: () => routingMethod.setPage("help"),
   title: "Help the shelter",
   className: "mobile-menu__link",
   id: "help",
@@ -44,7 +44,7 @@ ulElem.appendChild(customLi3);
 
 const customLi4 = Li("mobile-menu__item");
 const customLink4 = RoutingLink({
-  onClick: () => routingMethod.setPage(""),
+  onClick: () => routingMethod.setPage("contacts"),
   title: "Contacts",
   className: "mobile-menu__link",
   id: "contacts",
