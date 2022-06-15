@@ -1,12 +1,13 @@
 import StartScreen from "./Components/MainPage/StartScreen";
 import HeaderTest from "./Components/OurPets/HeaderTest/index";
+import Wrapper from "./Components/Wrapper";
 import "./index.scss";
 
 function renderApp() {
   const root = document.getElementById("root");
   const searchParams = new URLSearchParams(window.location.search);
   let page = searchParams.get("page");
-  root.append(StartScreen);
+  root.append(Wrapper);
 
   console.log("hi");
 
@@ -25,7 +26,7 @@ function renderApp() {
       break;
     default:
       root.lastChild.remove();
-      root.append(StartScreen);
+      root.append(Wrapper);
   }
 }
 

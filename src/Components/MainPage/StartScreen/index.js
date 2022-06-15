@@ -4,8 +4,11 @@ import StartScreen from "./index.html";
 import "./index.scss";
 
 const startScreen = htmlToElement(StartScreen);
-const wrapperElem = startScreen.getElementsByClassName("wrapper")[0];
+const startScreenWrapperElem = startScreen.getElementsByClassName(
+  "start-screen__wrapper"
+)[0];
 
-wrapperElem.prepend(Header);
+startScreenWrapperElem.prepend(Header);
+
 
 export default startScreen;

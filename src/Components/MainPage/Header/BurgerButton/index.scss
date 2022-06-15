@@ -1,6 +1,7 @@
 .burger-button {
   width: 30px;
   height: 30px;
+  cursor: pointer;
 
   & > div {
     width: 100%;
@@ -13,7 +14,7 @@
   }
 }
 
-.burger-button:hover {
+.turned {
   @include transform(rotateZ(90deg));
 }
 
