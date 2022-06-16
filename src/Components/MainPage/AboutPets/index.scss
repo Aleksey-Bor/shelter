@@ -1,0 +1,38 @@
+.about-pets-container {
+  max-width: 1200px;
+  margin: auto;
+
+}
+
+.about-pets {
+  display: flex;
+  margin: 62px 0 0 255px;
+  max-width: 770px;
+  justify-content: space-between;
+}
+
+.about-pets__image-container {
+  margin-top: 19px;
+}
+
+.about-pets__image {
+  width: 300px;
+}
+
+.about-pets__content-container {
+  max-width: 430px;
+}
+
+.about-pets__title {
+  max-width: 370px;
+  font: $font-header3;
+  color: $color-dark-l;
+  letter-spacing: 0.06em;
+  margin-bottom: 24px;
+}
+
+.about-text__paragraph {
+  font: $font-paragraph-l;
+  color: $color-dark-xl;
+  margin-bottom: 25px;
+}
