@@ -1,7 +1,6 @@
 .about-pets-container {
   max-width: 1200px;
   margin: auto;
-
 }
 
 .about-pets {
@@ -35,4 +34,22 @@
   font: $font-paragraph-l;
   color: $color-dark-xl;
   margin-bottom: 25px;
+}
+
+@media screen and (max-width: 1050px) {
+  .about-pets {
+    margin: 46px 0 0;
+  }
+}
+
+@media screen and (max-width: 905px) {
+  .about-pets {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-left: 19px;
+  }
+
+  .about-pets__image-container {
+    margin-top: 53px;
+  }
 }
