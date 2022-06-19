@@ -5,7 +5,7 @@ import Wrapper from "./index.html";
 import "./index.scss";
 
 const wrapper = htmlToElement(Wrapper);
-// wrapper.appendChild(StartScreen);
+wrapper.appendChild(StartScreen);
 wrapper.appendChild(AboutPetsElem);
 
 export default wrapper;

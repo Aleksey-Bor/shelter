@@ -54,7 +54,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 340px) {
   .about-pets {
     max-width: 300px;
     margin: 16px auto 0;
@@ -82,3 +82,10 @@
     }
   }
 }
+
+@media screen and (max-width: 318px) {
+  .about-pets__image {
+    width: 100%;
+  }
+}
+

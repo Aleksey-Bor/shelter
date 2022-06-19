@@ -33,7 +33,6 @@
   %link-shared {
     padding-bottom: 4px;
     font: $font-paragraph-l;
-    letter-spacing: 0.005em;
     color: $color-dark-s;
   }
 
@@ -77,15 +76,15 @@
     &__list {
       display: none;
     }
+  }
 
-    .burger-button {
-      margin-top: 36px;
-      margin-right: 44px;
-    }
+  .burger-button {
+    margin-top: 36px;
+    margin-right: 44px;
+  }
 
-    .burger-button > div {
-      margin-bottom: 8px;
-    }
+  .burger-button > div {
+    margin-bottom: 8px;
   }
 }
 
@@ -104,5 +103,11 @@
     &__logo p {
       min-width: 184px;
     }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .burger-button {
+    margin-right: 5px;
   }
 }
