@@ -6,7 +6,7 @@ const RoutingLink = ({ onClick, title, className, id }) => {
   const linkElement = htmlToElement(LinkHTML);
   linkElement.innerHTML = title;
   let searchParams = new URLSearchParams(window.location.search);
-  searchParams.get("page") === id
+  searchParams.get("page") === id 
     ? linkElement.classList.add(className + "_active")
     : linkElement.classList.add(className);
   linkElement.id = id;

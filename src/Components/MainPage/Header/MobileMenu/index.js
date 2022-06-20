@@ -7,6 +7,7 @@ import "./index.scss";
 
 const mobileMenu = htmlToElement(MobileMenu);
 const ulElem = mobileMenu.getElementsByClassName("mobile-menu")[0];
+let searchParams = new URLSearchParams(window.location.search);
 
 export const showMenu = (nameClass) => {
   ulElem.classList.toggle(nameClass);
@@ -19,6 +20,9 @@ const customLink1 = RoutingLink({
   className: "mobile-menu__link",
   id: "",
 });
+if (searchParams.get("page") === null) {
+  customLink1.className = customLink1.className + "_active";
+}
 customLi1.appendChild(customLink1);
 ulElem.appendChild(customLi1);
 
