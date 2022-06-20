@@ -1,0 +1,32 @@
+.about-friends-container {
+  background-color: $color-light-l;
+}
+
+.about-friends {
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-between;
+  align-items: center;
+
+  &__title {
+    max-width: 400px;
+    text-align: center;
+    font: $font-header3;
+    color: $color-dark-l;
+    letter-spacing: 0.06em;
+  }
+
+  &__button {
+    border: none;
+    border-radius: 100px;    
+    padding: 15px 45px;
+    background-color: $color-primary;
+    font: $font-button;
+    color: $color-dark-3xl;
+    cursor: pointer;
+  }
+
+  &__button:hover {
+    background-color: $color-primary-light;
+  }
+}
